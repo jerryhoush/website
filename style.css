@@ -50,6 +50,45 @@ html, body {
   padding: 1rem;
   border-radius: 0;
 }
+.padding {
+  padding-bottom: 2rem;
+}
+.padding-right {
+  padding-right: 6rem;
+}
+.welcome {
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+.welcome hr {
+  border-top: 2px solid #b4b4b4;
+  width: 95%;
+  margin-top: .3rem;
+  margin-bottom: 1rem;
+}
+.fa-youtube {
+  color: #c4302b;
+}
+.fa-instagram {
+  color: #e95950;
+}
+.fa-podcast {
+  color: #872EC4;
+}
+.fa-github {
+  color: #333;
+}
+.fa-youtube, .fa-instagram, .fa-podcast, .fa-github {
+  font-size: 4em;
+  margin: 1rem;
+}
+.p {
+  text-align: center;
+  font-size: 60px;
+  margin-top: 0px;
+}
+
 
 /*---Media Queries --*/
 @media (max-width: 992px) {
