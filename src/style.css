@@ -50,6 +50,12 @@ html, body {
   padding: 1rem;
   border-radius: 0;
 }
+.spidey {
+  text-align: right;
+}
+.spidey-padding {
+  padding-top: 10rem;
+}
 .padding {
   padding-bottom: 2rem;
 }
