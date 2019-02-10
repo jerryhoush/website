@@ -190,6 +190,12 @@ hr.light-100 {
   font-size: 2em;
   margin: .7rem;
   }
+  .spidey {
+  text-align: center;
+}
+.spidey-padding {
+  padding-top: 10rem;
+}
 }
 @media (max-width: 576px) {
 .carousel-caption {
@@ -215,6 +221,12 @@ hr.light-100 {
     font-size: 1em;
     padding: .5rem;
   }
+  .spidey {
+  text-align: center;
+}
+.spidey-padding {
+  padding-top: 10rem;
+}
 }
 
 
