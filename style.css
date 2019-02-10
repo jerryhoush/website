@@ -79,26 +79,136 @@ html, body {
 .fa-github {
   color: #333;
 }
+.fa-square, .fa-check-square {
+  color: #000;
+  font-size: 20px;
+  display: flex;
+  float: left;
+  }
 .fa-youtube, .fa-instagram, .fa-podcast, .fa-github {
   font-size: 4em;
   margin: 1rem;
 }
+.fa-youtube:hover, .fa-instagram:hover, .fa-podcast:hover, .fa-github:hover {
+  opacity: .5;
+}
+.center {
+  text-align: center;
+   padding-top: 4px;
+}
+.center h2 {
+  padding-top: 2px;
+}
+ul {
+  display: table;
+  margin: 0 auto;
+  list-style-type: none;
+}
+.bucket-header h5 {
+  text-align: center;
+}
+.border {
+  border: 5px solid black;
+}
+
+footer {
+  padding-top: 2rem;
+}
+hr.light {
+  border-top: 1px solid #d5d5d5;
+  width: 75%;
+  margin-top: .8rem;
+  margin-bottom: 1rem;
+}
+hr.light-100 {
+  border-top: 1px solid #d5d5d5;
+  width: 100%;
+  margin-top: .8rem;
+  margin-bottom: 1rem;
+}
+
 .p {
   text-align: center;
   font-size: 60px;
   margin-top: 0px;
 }
+.one-line {
+  display: inline-block;
+  line-height: 1.22;
+  white-space: nowrap;
+  padding: .5em;
+}
+
+/*---Testing Style To Make Check Marks Work On Bucket List Page---*/
+
+.indent-1 {
+  float: left;
+}
+.indent-1 section {
+  width: 50%; 
+  float: left;
+}
 
 
 /*---Media Queries --*/
 @media (max-width: 992px) {
-
+  .social a {
+    font-size: 4em;
+    padding: 2rem;
   }
+}
 @media (max-width: 768px) {
-  
+.carousel-caption {
+  top: 45%;
+}
+.carousel-caption h1 {
+  font-size: 350%;
+}
+.carousel-caption h3 {
+  font-size: 140%;
+  font-weight: 400;
+  padding-bottom: .2rem;
+}
+.carousel-caption .btn {
+  font-size: 95%;
+  padding: 8px 14px;
+}
+.display-4 {
+  font-size: 200%;
+}
+.social a {
+    font-size: 2.5em;
+    padding: 1.2rem;
+  }
+  .fa-youtube, .fa-instagram, .fa-podcast, .fa-github {
+  font-size: 2em;
+  margin: .7rem;
+  }
 }
 @media (max-width: 576px) {
-  
+.carousel-caption {
+  top: 40%;
+}
+.carousel-caption h1 {
+  font-size: 125%;
+}
+.carousel-caption h3 {
+  font-size: 60%;
+}
+.carousel-caption .btn {
+  font-size: 90%;
+  padding: 4px 8px;
+}  
+.carousel-indicators {
+  display: none;
+}
+.display-4 {
+  font-size: 160%;
+}
+.social a {
+    font-size: 1em;
+    padding: .5rem;
+  }
 }
 
 
