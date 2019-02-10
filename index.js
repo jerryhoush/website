@@ -4,7 +4,7 @@ const path = require('path');
 var app = express();
 
 app.set('PORT', (process.env.PORT || 5000))
-app.use('/img', express.static(__dirname + '/media'));
+app.use('/media', express.static(__dirname + '/media'));
 app.use(express.static(__dirname + '/src'));
 
 app.get('/', function(req, res) {
