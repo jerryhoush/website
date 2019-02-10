@@ -10,7 +10,7 @@ app.set('port', (process.env.PORT || 5000))
 app.use('/img', express.static(__dirname + '/img'))
 
 app.get('/', function(request, response) {
-  response.sendFile('/index.html')
+  response.sendFile('index.html')
 })
 
 app.listen(app.get('port'), function() {
