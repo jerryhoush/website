@@ -1,18 +1,16 @@
-var express = require('express')
-var app = express()
+var express = require('express');
+const path = require('path');
 
-let port = process.env.PORT;
-if (port == null || port == "") {
-  port = 8000;
-}
-app.listen(port);
-app.set('port', (process.env.PORT || 5000))
-app.use('/img', express.static(__dirname + '/img'))
+var app = express();
 
-app.get('/', function(request, response) {
-  response.sendFile('/index.html')
-})
+app.set('PORT', (process.env.PORT || 5000))
+app.use('/media', express.static(__dirname + '/media'));
+app.use(express.static(__dirname + '/src'));
 
-app.listen(app.get('port'), function() {
-  console.log("Node app is running at localhost:" + app.get('port'))
-})
+app.get('/', function(req, res) {
+  res.sendFile(path.join(__dirname + '/index.html'))
+});
+
+app.listen(app.get('PORT'), function() {
+  console.log("Node app is running at localhost:" + app.get('PORT'))
+});
